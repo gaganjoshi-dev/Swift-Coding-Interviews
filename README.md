@@ -19,12 +19,18 @@ A growing collection of Swift interview topics with concise explanations and run
   - `#if DEBUG` test seams instead of loosening access control
   - Namespacing test helpers behind a `hooks` object
 
+- [Custom View Modifier](Topics/CustomViewModifier.swift)
+  - Conforming to `ViewModifier` and styling `content` in `body`
+  - A `View` extension so usage reads like a built-in modifier
+  - Naming a repeated style so it lives in one place
+
 ## Run an Example
 
 ```bash
 swift Topics/PropertyWrapper.swift
 swift Topics/HigherOrderFunction.swift
 # Open Topics/Hooks.swift in an Xcode test target (uses XCTest + #if DEBUG hooks)
+# Open Topics/CustomViewModifier.swift in an Xcode SwiftUI project or preview
 ```
 
 ## License
