@@ -4,17 +4,17 @@ A growing collection of Swift interview topics with concise explanations and run
 
 ## Topics
 
-- [Property Wrappers](PropertyWrapper.swift)
+- [Property Wrappers](Topics/PropertyWrapper.swift)
   - `wrappedValue`
   - `projectedValue` and `$` syntax
   - Applying read and write policies to properties
 
-- [Higher-Order Functions](HigherOrderFunction.swift)
+- [Higher-Order Functions](Topics/HigherOrderFunction.swift)
   - Custom `myFilter`, `myMap`, and `myReduce` on `Array`
   - Passing behavior as a closure
   - What a higher-order function really is
 
-- [Testing Private Functions with Hooks](Hooks.swift)
+- [Testing Private Functions with Hooks](Topics/Hooks.swift)
   - Why `private` is reachable from same-file extensions
   - `#if DEBUG` test seams instead of loosening access control
   - Namespacing test helpers behind a `hooks` object
@@ -22,9 +22,9 @@ A growing collection of Swift interview topics with concise explanations and run
 ## Run an Example
 
 ```bash
-swift PropertyWrapper.swift
-swift HigherOrderFunction.swift
-# Open Hooks.swift in an Xcode test target (uses XCTest + #if DEBUG hooks)
+swift Topics/PropertyWrapper.swift
+swift Topics/HigherOrderFunction.swift
+# Open Topics/Hooks.swift in an Xcode test target (uses XCTest + #if DEBUG hooks)
 ```
 
 ## License
