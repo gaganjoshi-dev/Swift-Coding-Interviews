@@ -24,11 +24,17 @@ A growing collection of Swift interview topics with concise explanations and run
   - A `View` extension so usage reads like a built-in modifier
   - Naming a repeated style so it lives in one place
 
+- [Thread-Safe Stack with a Dispatch Barrier](Topics/DispatchBarrierThreadSafe.swift)
+  - Reader-writer lock: concurrent reads, `.barrier` writes
+  - Why `.barrier` is a no-op unless the queue is `.concurrent`
+  - Keeping every array access on the same queue to avoid data races
+
 ## Run an Example
 
 ```bash
 swift Topics/PropertyWrapper.swift
 swift Topics/HigherOrderFunction.swift
+swift Topics/DispatchBarrierThreadSafe.swift
 # Open Topics/Hooks.swift in an Xcode test target (uses XCTest + #if DEBUG hooks)
 # Open Topics/CustomViewModifier.swift in an Xcode SwiftUI project or preview
 ```
