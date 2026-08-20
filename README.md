@@ -29,12 +29,18 @@ A growing collection of Swift interview topics with concise explanations and run
   - Why `.barrier` is a no-op unless the queue is `.concurrent`
   - Keeping every array access on the same queue to avoid data races
 
+- [Parse a CSV into a Model](Topics/CSVToModel.swift)
+  - Split the CSV string into rows and columns
+  - Map each record into a `Person`
+  - Counter tasks (error handling, `Result`, sort/filter) left for later
+
 ## Run an Example
 
 ```bash
 swift Topics/PropertyWrapper.swift
 swift Topics/HigherOrderFunction.swift
 swift Topics/DispatchBarrierThreadSafe.swift
+swift Topics/CSVToModel.swift
 # Open Topics/Hooks.swift in an Xcode test target (uses XCTest + #if DEBUG hooks)
 # Open Topics/CustomViewModifier.swift in an Xcode SwiftUI project or preview
 ```
